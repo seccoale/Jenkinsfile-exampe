@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clean All') {
       steps {
-        sh 'rm -rf .*'
+        sh 'yes | rm -rf ./*'
         sh 'mvn clean'
       }
     }
